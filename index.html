@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Личная сайт-визитка."
+    />
+    <title>bio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="boot-screen" aria-hidden="true">
+      <div class="boot-grid"></div>
+      <div class="boot-copy">
+        <span class="boot-kicker">initializing portfolio</span>
+        <strong class="boot-title">welcome</strong>
+        <span class="boot-line">front-end developer / motion interface
+          
+        </span>
+      </div>
+    </div>
+
+    <canvas id="black-field" aria-hidden="true"></canvas>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="lime-tracer" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="topbar" data-reveal>
+      <a class="brand magnetic" href="#home" aria-label="На главную">
+        <span class="brand-sigil">/</span>
+        <span class="brand-stack">
+          <span>total.black</span>
+          <span>frontend dev</span>
+        </span>
+      </a>
+
+      <nav class="nav-rail" aria-label="Навигация">
+        <a class="magnetic" href="#about">about</a>
+        <a class="magnetic" href="#experience">exp</a>
+        <a class="magnetic" href="#work">work</a>
+        <a class="magnetic" href="#stack">stack</a>
+        <a class="magnetic" href="#contact">contact</a>
+      </nav>
+
+      <a class="status-pill magnetic" href="mailto:hello@example.com">
+        <span></span>
+        available
+      </a>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-meta" data-reveal>
+          <span>01</span>
+          <span>personal site</span>
+          <span>2026</span>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>Welcome page</p>
+          <h1 class="hero-title" data-name="VYACHESLAV">VYA</h1>
+          <p class="hero-text" data-reveal>
+            Я фронтенд и бэкенд разработчик, который собирает быстрые, дерзкие и
+            живые продукты целиком: от интерфейса и анимаций до API, архитектуры
+            и надежной серверной логики.
+          </p>
+          <div class="hero-actions" data-reveal>
+            <a class="btn btn-main magnetic" href="#work">
+              <span>смотреть работы</span>
+              <i></i>
+            </a>
+            <a class="btn btn-quiet magnetic" href="#contact">связаться</a>
+          </div>
+        </div>
+
+        <div class="hero-terminal" data-tilt data-reveal>
+          <div class="terminal-top">
+            <span></span>
+            <span>live build</span>
+            <span></span>
+          </div>
+          <div class="terminal-body" aria-label="Анимированный терминал">
+            <p><b>$</b> npm run identity</p>
+            <p><b>></b> role: <span id="typed-role">frontend / backend developer</span></p>
+            <p><b>></b> worked_at: VK / Kaspersky / Avito</p>
+            <p><b>></b> current: Т-Банк</p>
+            <p><b>></b> focus: product engineering / motion / backend</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="split-section section-shell">
+        <div class="section-label" data-reveal>
+          <span>02</span>
+          <span>about</span>
+        </div>
+        <div class="big-statement" data-reveal>
+          Делаю интерфейсы, где движение не украшение, а часть ощущения продукта.
+        </div>
+        <div class="about-grid">
+          <article class="black-card" data-tilt data-reveal>
+            <span class="card-index">A</span>
+            <h2>UI that feels sharp</h2>
+            <p>
+              Собираю экраны с плотной визуальной логикой: типографика, ритм,
+              состояния, hover, адаптив и аккуратная работа с деталями.
+            </p>
+          </article>
+          <article class="black-card" data-tilt data-reveal>
+            <span class="card-index">B</span>
+            <h2>Motion with purpose</h2>
+            <p>
+              Добавляю анимации в моменты, где они помогают понять интерфейс,
+              подчеркнуть действие или создать вау-эффект без хаоса.
+            </p>
+          </article>
+          <article class="black-card" data-tilt data-reveal>
+            <span class="card-index">C</span>
+            <h2>Backend included</h2>
+            <p>
+              Проектирую серверную часть, API, интеграции и логику так, чтобы
+              продукт был не только красивым, но и устойчивым под нагрузкой.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="company-marquee" aria-label="Опыт в компаниях">
+        <div class="company-track">
+          <span class="company-logo company-logo-wide"><img src="assets/vk.png" alt="VK logo" /></span>
+          <span class="company-logo company-logo-wide"><img src="assets/kaspersky.png" alt="Kaspersky logo" /></span>
+          <span class="company-logo"><img src="assets/avito.png" alt="Avito logo" /></span>
+          <span class="company-logo company-logo-wide is-current"><img src="assets/tbank.png" alt="Т-Банк logo" /><em>current</em></span>
+          <span class="company-logo company-logo-wide"><img src="assets/vk.png" alt="VK logo" /></span>
+          <span class="company-logo company-logo-wide"><img src="assets/kaspersky.png" alt="Kaspersky logo" /></span>
+          <span class="company-logo"><img src="assets/avito.png" alt="Avito logo" /></span>
+          <span class="company-logo company-logo-wide is-current"><img src="assets/tbank.png" alt="Т-Банк logo" /><em>current</em></span>
+          <span class="company-logo company-logo-wide"><img src="assets/vk.png" alt="VK logo" /></span>
+          <span class="company-logo company-logo-wide"><img src="assets/kaspersky.png" alt="Kaspersky logo" /></span>
+          <span class="company-logo"><img src="assets/avito.png" alt="Avito logo" /></span>
+          <span class="company-logo company-logo-wide is-current"><img src="assets/tbank.png" alt="Т-Банк logo" /><em>current</em></span>
+        </div>
+      </section>
+
+      <section id="experience" class="experience-section section-shell">
+        <div class="section-label" data-reveal>
+          <span>03</span>
+          <span>experience</span>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card" data-tilt data-reveal>
+            <span>worked at</span>
+            <h2>VK</h2>
+            <p>Продуктовые интерфейсы, инженерная дисциплина и работа в больших командах.</p>
+          </article>
+          <article class="experience-card" data-tilt data-reveal>
+            <span>worked at</span>
+            <h2>Kaspersky</h2>
+            <p>Акцент на надежность, безопасность, аккуратную архитектуру и качество реализации.</p>
+          </article>
+          <article class="experience-card" data-tilt data-reveal>
+            <span>worked at</span>
+            <h2>Avito</h2>
+            <p>Высоконагруженный продуктовый опыт, быстрые флоу и внимание к UX-деталям.</p>
+          </article>
+          <article class="experience-card is-current" data-tilt data-reveal>
+            <span>currently at</span>
+            <h2>Т-Банк</h2>
+            <p>Сейчас работаю над технологичными продуктами на стыке фронтенда и бэкенда.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Направления">
+        <div class="marquee-track">
+          <span>frontend</span>
+          <span>backend</span>
+          <span>react</span>
+          <span>interfaces</span>
+          <span>api</span>
+          <span>animation</span>
+          <span>web apps</span>
+          <span>performance</span>
+          <span>frontend</span>
+          <span>backend</span>
+          <span>react</span>
+          <span>interfaces</span>
+          <span>api</span>
+          <span>animation</span>
+          <span>web apps</span>
+          <span>performance</span>
+        </div>
+      </section>
+
+      <section id="work" class="work-section section-shell">
+        <div class="section-label" data-reveal>
+          <span>04</span>
+          <span>selected work</span>
+        </div>
+
+        <div class="work-list">
+          <article class="work-item" data-reveal>
+            <span class="work-number">01</span>
+            <div>
+              <h2>Dark SaaS Dashboard</h2>
+              <p>Админка с плотной сеткой, графиками, быстрыми состояниями и микродвижением.</p>
+            </div>
+            <span class="work-tag">React / TS</span>
+          </article>
+          <article class="work-item" data-reveal>
+            <span class="work-number">02</span>
+            <div>
+              <h2>Creative Portfolio</h2>
+              <p>Имиджевая страница с интро-анимацией, нестандартной навигацией и scroll motion.</p>
+            </div>
+            <span class="work-tag">Motion</span>
+          </article>
+          <article class="work-item" data-reveal>
+            <span class="work-number">03</span>
+            <div>
+              <h2>Commerce Experience</h2>
+              <p>Каталог с быстрыми фильтрами, понятными карточками и плавными переходами.</p>
+            </div>
+            <span class="work-tag">Next.js</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="stack-section section-shell">
+        <div class="section-label" data-reveal>
+          <span>05</span>
+          <span>stack</span>
+        </div>
+        <div class="stack-cloud" data-reveal>
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Next.js</span>
+          <span>Redux</span>
+          <span>REST API</span>
+          <span>Node.js</span>
+          <span>Backend API</span>
+          <span>PostgreSQL</span>
+          <span>GSAP</span>
+          <span>CSS Architecture</span>
+          <span>Adaptive UI</span>
+          <span>Figma</span>
+          <span>Performance</span>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section section-shell">
+        <div class="section-label" data-reveal>
+          <span>06</span>
+          <span>contact</span>
+        </div>
+        <div class="contact-panel" data-tilt data-reveal>
+          <p>ready when you are</p>
+          <h2>Давай соберем сайт, который выглядит уверенно с первой секунды.</h2>
+          <div class="contact-row">
+            <a class="btn btn-main magnetic" href="mailto:hello@example.com">
+              <span>hello@example.com</span>
+              <i></i>
+            </a>
+            <a class="ghost-link magnetic" href="https://t.me/" target="_blank" rel="noreferrer">telegram</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
